@@ -1,0 +1,30 @@
+@import "./../../../styles/variables.scss";
+
+
+.nav {
+	height: 100%;
+	display: none;
+	align-items: center;
+
+	ul {
+		height: 100px;
+		display: flex;
+		margin-left: $spacing-lg;
+		li {
+			height: 100%;
+			&:not(:last-child) {
+				margin-right: $spacing-md;
+			}
+			a {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				font-size: 1.1rem;
+				letter-spacing: $letterSpacing;
+				text-decoration: none;
+				color: $white;
+				position: relative;
+			}
+		}
+	}
+}
